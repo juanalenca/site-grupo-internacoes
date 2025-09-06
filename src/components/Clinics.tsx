@@ -7,25 +7,25 @@ const Clinics = () => {
   const clinics = [
     {
       icon: User,
-      title: 'INTERNAÇÃO MASCULINA - CLÍNICA PARA HOMENS',
-      subtitle: 'INTERNAÇÃO MASCULINA VOLUNTÁRIA OU INVOLUNTÁRIA',
+      title: 'CLÍNICA DE INTERNAÇÃO MASCULINA',
+      subtitle: 'INTERNAÇÃO VOLUNTÁRIA OU INVOLUNTÁRIA',
       color: 'blue'
     },
     {
       icon: Users,
-      title: 'INTERNAÇÃO FEMININA - CLÍNICA PARA MULHERES',
-      subtitle: 'INTERNAÇÃO FEMININA VOLUNTÁRIA OU INVOLUNTÁRIA',
+      title: 'CLÍNICA DE INTERNAÇÃO FEMININA',
+      subtitle: 'INTERNAÇÃO VOLUNTÁRIA OU INVOLUNTÁRIA',
       color: 'pink'
     },
     {
       icon: Baby,
-      title: 'INTERNAÇÃO PARA MENORES - CLÍNICA PARA MENORES DE IDADE',
-      subtitle: 'INTERNAÇÃO PARA MENORES VOLUNTÁRIA OU INVOLUNTÁRIA',
+      title: 'CLÍNICA DE INTERNAÇÃO PARA MENORES DE IDADE',
+      subtitle: 'INTERNAÇÃO VOLUNTÁRIA OU INVOLUNTÁRIA',
       color: 'green'
     },
     {
       icon: Brain,
-      title: 'INTERNAÇÃO TRANSTORNOS MENTAIS - SAÚDE MENTAL',
+      title: 'CLÍNICA DE INTERNAÇÃO TRANSTORNOS MENTAIS',
       subtitle: 'INTERNAÇÃO VOLUNTÁRIA OU INVOLUNTÁRIA (Homens ou Mulheres)',
       color: 'purple'
     },

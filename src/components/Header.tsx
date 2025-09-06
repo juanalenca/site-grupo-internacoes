@@ -33,7 +33,7 @@ const Header = () => {
               <Heart className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-lg font-bold text-gray-900">Grupo Bem Estar</h1>
+              <h1 className="text-lg font-bold text-gray-900">Grupo Bem-Estar</h1>
               <p className="text-xs text-gray-600">Internações</p>
             </div>
           </div>

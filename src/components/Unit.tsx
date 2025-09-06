@@ -1,40 +1,42 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Building2, Bed, Coffee, Users, Gamepad2, TreePine } from 'lucide-react';
 
+// Importe as 15 imagens locais (ajuste os nomes conforme suas fotos)
+import imagem1 from '../assets/images/1.jpg';
+import imagem2 from '../assets/images/2.jpg';
+import imagem3 from '../assets/images/3.jpg';
+import imagem4 from '../assets/images/4.jpg';
+import imagem5 from '../assets/images/5.jpg';
+import imagem6 from '../assets/images/6.jpg';
+import imagem7 from '../assets/images/7.jpg';
+import imagem8 from '../assets/images/8.jpg';
+import imagem9 from '../assets/images/9.jpg';
+import imagem10 from '../assets/images/10.jpg';
+import imagem11 from '../assets/images/11.jpg';
+import imagem12 from '../assets/images/12.jpg';
+import imagem13 from '../assets/images/13.jpg';
+import imagem14 from '../assets/images/14.jpg';
+import imagem15 from '../assets/images/15.jpg';
+
 const Unit = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    {
-      url: 'https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Fachada Principal',
-      description: 'Entrada moderna e acolhedora'
-    },
-    {
-      url: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Quartos Confortáveis',
-      description: 'Ambiente privativo e tranquilo'
-    },
-    {
-      url: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Sala de Terapia em Grupo',
-      description: 'Espaço para atividades terapêuticas'
-    },
-    {
-      url: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Consultório Médico',
-      description: 'Atendimento médico especializado'
-    },
-    {
-      url: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Área de Convivência',
-      description: 'Espaço de socialização e lazer'
-    },
-    {
-      url: 'https://images.pexels.com/photos/1698537/pexels-photo-1698537.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Jardim Terapêutico',
-      description: 'Área verde para relaxamento'
-    }
+    { url: imagem1, title: 'Imagem 1' },
+    { url: imagem2, title: 'Imagem 2' },
+    { url: imagem3, title: 'Imagem 3' },
+    { url: imagem4, title: 'Imagem 4' },
+    { url: imagem5, title: 'Imagem 5' },
+    { url: imagem6, title: 'Imagem 6' },
+    { url: imagem7, title: 'Imagem 7' },
+    { url: imagem8, title: 'Imagem 8' },
+    { url: imagem9, title: 'Imagem 9' },
+    { url: imagem10, title: 'Imagem 10' },
+    { url: imagem11, title: 'Imagem 11' },
+    { url: imagem12, title: 'Imagem 12' },
+    { url: imagem13, title: 'Imagem 13' },
+    { url: imagem14, title: 'Imagem 14' },
+    { url: imagem15, title: 'Imagem 15' },
   ];
 
   const facilities = [
@@ -69,50 +71,38 @@ const Unit = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Gallery */}
           <div className="relative">
-            <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+            <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl relative">
               <img 
                 src={images[currentImage].url} 
                 alt={images[currentImage].title}
                 className="w-full h-full object-cover transition-transform duration-500"
+                onError={(e) => { (e.target as HTMLImageElement).src = 'https://via.placeholder.com/800x450'; console.log('Imagem falhou ao carregar', images[currentImage].url); }}
               />
-              
-              {/* Navigation Buttons */}
               <button 
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
               >
                 <ChevronLeft className="w-6 h-6 text-gray-800" />
               </button>
               <button 
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
               >
                 <ChevronRight className="w-6 h-6 text-gray-800" />
               </button>
-
-              {/* Image Info */}
-              <div className="absolute bottom-4 left-4 right-4 bg-black/70 text-white p-4 rounded-lg backdrop-blur-sm">
-                <h3 className="font-semibold text-lg">{images[currentImage].title}</h3>
-                <p className="text-sm text-gray-200">{images[currentImage].description}</p>
-              </div>
             </div>
 
-            {/* Thumbnails */}
-            <div className="flex space-x-2 mt-4 overflow-x-auto pb-2">
-              {images.map((image, index) => (
+            {/* Pagination Dots */}
+            <div className="flex justify-center space-x-2 mt-6">
+              {images.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentImage(index)}
-                  className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
-                    index === currentImage ? 'ring-4 ring-blue-500 scale-105' : 'opacity-70 hover:opacity-100'
+                  className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                    index === currentImage ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
-                >
-                  <img 
-                    src={image.url} 
-                    alt={image.title}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
+                  aria-label={`View image ${index + 1}`}
+                ></button>
               ))}
             </div>
           </div>

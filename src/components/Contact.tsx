@@ -17,10 +17,14 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+ const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Olá! Meu nome é ${formData.name}.%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`;
-    window.open(`https://wa.me/5581991577470?text=${whatsappMessage}`, '_blank');
+    const messageText = `Olá! Meu nome é ${formData.name}. Email: ${formData.email}. Telefone: ${formData.phone}. Mensagem: ${formData.message}`;
+    const encodedMessage = encodeURIComponent(messageText);
+    
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5581991577470&text=${encodedMessage}`;
+
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -42,12 +46,6 @@ const Contact = () => {
       title: 'WhatsApp',
       value: '(81) 99157-7470',
       link: 'https://wa.me/5581991577470'
-    },
-    {
-      icon: Mail,
-      title: 'Email',
-      value: 'contato@grupobemestar.com.br',
-      link: 'mailto:contato@grupobemestar.com.br'
     },
     {
       icon: MapPin,
