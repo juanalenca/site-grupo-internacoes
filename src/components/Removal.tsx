@@ -1,5 +1,6 @@
 import React from 'react';
 import { Truck, Shield, Clock, Phone } from 'lucide-react';
+import remocao from '../assets/images/remocao3.jpeg'; 
 
 const Removal = () => {
   return (
@@ -87,7 +88,7 @@ const Removal = () => {
 
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              src={remocao}
               alt="Equipe de remoção especializada"
               className="w-full rounded-2xl shadow-lg"
             />
