@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Heart, Users, Award } from 'lucide-react';
+import aboutImage from '../assets/images/about2.jpeg'; 
 
 const About = () => {
   const features = [
@@ -64,7 +65,7 @@ const About = () => {
 
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/4167541/pexels-photo-4167541.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              src={aboutImage} 
               alt="Ambiente terapêutico acolhedor"
               className="w-full rounded-2xl shadow-lg"
             />
