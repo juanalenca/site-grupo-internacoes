@@ -19,7 +19,7 @@ const Contact = () => {
 
  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const messageText = `Olá! Meu nome é ${formData.name}.\n Email: ${formData.email}.\n Telefone: ${formData.phone}.\n Mensagem: ${formData.message}`;
+    const messageText = `Olá! Meu nome é ${formData.name}.\nEmail: ${formData.email}\nTelefone: ${formData.phone}\nMensagem: ${formData.message}`;
     const encodedMessage = encodeURIComponent(messageText);
     
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5581991577470&text=${encodedMessage}`;
