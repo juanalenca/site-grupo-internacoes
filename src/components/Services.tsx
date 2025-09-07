@@ -53,12 +53,12 @@ const Services = () => {
             TRATAMENTO INOVADOR E DIFERENCIADO!
           </p>
           <a
-            href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem Estar Internações!"
+            href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem-Estar Internações!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300 text-lg"
           >
-            Fale Conosco pelo WhatsApp →
+            Fale Conosco pelo WhatsApp
           </a>
         </div>
 
