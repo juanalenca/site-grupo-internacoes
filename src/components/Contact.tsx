@@ -19,7 +19,7 @@ const Contact = () => {
 
  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const messageText = `Olá! Meu nome é ${formData.name}. Email: ${formData.email}. Telefone: ${formData.phone}. Mensagem: ${formData.message}`;
+    const messageText = `Olá! Meu nome é ${formData.name}.\n Email: ${formData.email}.\n Telefone: ${formData.phone}.\n Mensagem: ${formData.message}`;
     const encodedMessage = encodeURIComponent(messageText);
     
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5581991577470&text=${encodedMessage}`;
@@ -130,7 +130,7 @@ const Contact = () => {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem Estar Internações!"
+                  href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem-Estar Internações!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-3 bg-green-500 text-white px-6 py-4 rounded-lg font-semibold hover:bg-green-600 transition duration-300 w-full"
