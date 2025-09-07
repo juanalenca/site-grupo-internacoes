@@ -1,49 +1,56 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import imagem2 from '../assets/images/face2.png';
+import imagem3 from '../assets/images/face3.png';
+import imagem4 from '../assets/images/face4.png';
+import imagem5 from '../assets/images/face5.png';
+import imagem6 from '../assets/images/face6.png';
+import imagem7 from '../assets/images/face7.png';
 
 const Testimonials = () => {
   const testimonials = [
     {
       name: 'João Silva',
       role: 'Paciente Recuperado',
-      content: 'Graças ao Grupo Bem Estar, recuperei minha vida. A equipe é incrível e o tratamento realmente funciona. Hoje sou uma pessoa totalmente diferente.',
+      content: 'Graças ao Grupo Bem-Estar, recuperei minha vida. A equipe é incrível e o tratamento realmente funciona. Hoje sou uma pessoa totalmente diferente.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
+      avatar: imagem5
     },
     {
       name: 'Maria Santos',
       role: 'Mãe de Paciente',
       content: 'Não tenho palavras para agradecer o cuidado que tiveram com meu filho. Profissionais extremamente capacitados e um ambiente acolhedor.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150'
+      avatar: imagem2
     },
     {
       name: 'Pedro Oliveira',
       role: 'Familiar',
       content: 'O apoio à família foi fundamental no processo de recuperação. Sempre nos mantiveram informados e acolheram nossa angústia com muito carinho.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150'
+      avatar: imagem7
     },
     {
       name: 'Ana Rodrigues',
       role: 'Paciente Recuperada',
       content: 'Encontrei aqui não apenas tratamento, mas uma nova família. O programa de 12 passos mudou completamente minha perspectiva de vida.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150'
+      // Linha corrigida aqui
+      avatar: imagem3
     },
     {
       name: 'Carlos Mendes',
       role: 'Paciente Recuperado',
       content: 'Já havia tentado tratamento em outros lugares, mas só aqui consegui realmente me recuperar. A abordagem humanizada faz toda a diferença.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150'
+      avatar: imagem6
     },
     {
       name: 'Luciana Costa',
       role: 'Esposa de Paciente',
       content: 'Ver meu marido se transformar foi emocionante. A clínica não só cuida do paciente, mas de toda a família. Somos gratos eternamente.',
       rating: 5,
-      avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150'
+      avatar: imagem4
     }
   ];
 
