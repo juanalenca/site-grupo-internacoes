@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Users, Clock } from 'lucide-react';
+import firstImage from '../assets/images/first4.jpeg'; 
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -57,7 +58,7 @@ const Hero = () => {
                 Fale Conosco Agora
               </button>
               <a
-                href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem Estar Internações!"
+                href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem-Estar Internações!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
@@ -71,7 +72,7 @@ const Hero = () => {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                src={firstImage} 
                 alt="Profissionais de saúde mental em ambiente terapêutico"
                 className="w-full h-full object-cover"
               />
