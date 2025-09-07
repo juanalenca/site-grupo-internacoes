@@ -86,11 +86,8 @@ const Clinics = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Clínicas de Recuperação
           </h2>
-          <p className="text-xl text-gray-600 mb-6">
-            CLÍNICAS DE RECUPERAÇÃO DE ÁLCOOL E DROGAS - Modalidades que atendemos
-          </p>
           <p className="text-lg text-gray-700">
-            Escolha o plano mais compatível com as acomodações que você procura.
+            Conheça nossas modalidades de tratamento e encontre o plano ideal de acomodação para sua recuperação.
           </p>
         </div>
 
