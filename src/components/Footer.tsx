@@ -15,7 +15,7 @@ const Footer = () => {
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-lg font-bold">Grupo Bem-Estar</h3>
+                <h3 className="text-lg font-bold">Grupo Transformação</h3>
                 <p className="text-sm text-gray-400">Internações</p>
               </div>
             </div>
@@ -158,7 +158,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Grupo Bem-Estar Internações. Todos os direitos reservados.
+              © {currentYear} Grupo Transformação Internações. Todos os direitos reservados.
             </p>
             <p className="text-gray-400 text-sm mt-4 md:mt-0">
               Transformando vidas há mais de 12 anos

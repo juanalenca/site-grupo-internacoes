@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <a 
-        href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem-Estar Internações!" 
+        href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Transformação Internações!" 
         target="_blank" 
         rel="noopener noreferrer"
         className="group block w-16 h-16 sm:w-20 sm:h-20 bg-green-500 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center hover:scale-110 animate-pulse"

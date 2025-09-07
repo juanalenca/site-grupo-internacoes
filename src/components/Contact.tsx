@@ -130,7 +130,7 @@ const Contact = () => {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Bem-Estar Internações!"
+                  href="https://wa.me/5581991577470?text=Olá, gostaria de saber mais sobre o Grupo Transformação!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-3 bg-green-500 text-white px-6 py-4 rounded-lg font-semibold hover:bg-green-600 transition duration-300 w-full"

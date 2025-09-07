@@ -12,7 +12,7 @@ const Testimonials = () => {
     {
       name: 'João Silva',
       role: 'Paciente Recuperado',
-      content: 'Graças ao Grupo Bem-Estar, recuperei minha vida. A equipe é incrível e o tratamento realmente funciona. Hoje sou uma pessoa totalmente diferente.',
+      content: 'Graças ao Grupo Transformação, recuperei minha vida. A equipe é incrível e o tratamento realmente funciona. Hoje sou uma pessoa totalmente diferente.',
       rating: 5,
       avatar: imagem5
     },
